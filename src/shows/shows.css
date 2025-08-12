@@ -1,27 +1,33 @@
+/* Container for all shows: lay them out in a row */
 .shows {
   display: flex;
 }
 
+/* Each show gets horizontal padding for spacing */
 .show {
   padding: 0 1ch;
 }
 
+/* Add a vertical separator line except for the last show */
 .show:not(:last-child) {
   border-right: 1px solid white;
 }
 
+/* Make shows feel clickable on hover or when selected */
 .show:hover,
 .show.selected {
   cursor: pointer;
   text-decoration: underline;
 }
 
+/* Container for show details: use grid layout with gaps */
 .show-details {
   display: grid;
   gap: 1rem;
 }
 
-@media (width >= 500px) {
+/* On wider screens, use two columns for show details */
+@media (min-width: 500px) {
   .show-details {
     grid-template-columns: minmax(30ch, auto) 1fr;
   }

@@ -1,28 +1,35 @@
+/* Reset default spacing and set box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set base text color and font */
 html {
   color: white;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Dark background for the whole page */
 body {
-  background: #111;
+  background-color: #111;
 }
 
+/* Add some padding around the main app container */
 #root {
   padding: 1rem;
 }
 
+/* Header layout: space between items */
 header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
+/* Basic button spacing */
 button {
   padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
