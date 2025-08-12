@@ -17,7 +17,7 @@ export default function ShowDetails({ show }) {
 
   // If no show is selected, prompt user to select one
   if (!show) {
-    return <p>Please select a show to learn more.</p>;
+    return <p>Please, Select a show to show more options.</p>;
   }
 
   return (
